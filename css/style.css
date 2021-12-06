@@ -3,7 +3,8 @@
   padding-left: 0px; }
 
 .navbar-nav {
-  padding-left: 82%; }
+  display: inline-flex;
+  justify-content: flex-end; }
 
 .navbar {
   padding-top: 20px;
@@ -28,7 +29,7 @@
   text-align: center; }
 
 .row-margin {
-  margin-left: 245px;
+  margin-left: 0px;
   margin-bottom: 100px; }
 
 .card-title {
@@ -39,6 +40,10 @@
 
 .top {
   margin-top: 60px; }
+
+.row {
+  margin-right: 0%;
+  margin-left: 0%; }
 
 .footer-margin {
   margin-top: 100px;

@@ -4,7 +4,8 @@
 }
 
 .navbar-nav {
-    padding-left: 82%;
+    display: inline-flex;
+    justify-content: flex-end;
 }
 
 .navbar {
