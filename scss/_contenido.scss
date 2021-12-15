@@ -36,3 +36,41 @@
     margin-right: 0%;
     margin-left: 0%;
 }
+
+$estilos: (
+    fontsize: 100px,
+    borde: 3px solid blue,
+);
+
+
+.color {
+    font-size: map-get($estilos, fontsize );
+    border: map-get($estilos, borde );
+}
+
+.save {
+    color: blue;
+    background-color: blueviolet;
+    border: 1px solid salmon;
+}
+
+.save--aceptar{
+    @extend .save;
+    border: 3px solid red;
+    color: rgb(0, 195, 255);
+}
+
+.save--cancelar{
+    @extend .save;
+    border: 5px solid goldenrod;
+    color: gray;
+} 
+
+@mixin sizes($widht, $height) {
+    width: $widht;
+    height: $height;
+}
+
+.altura{
+    @include sizes(150 px, 150px )
+}
