@@ -1,24 +1,21 @@
-.col-lg-12 {
-  padding-right: 0px;
-  padding-left: 0px; }
-
-.navbar-nav {
-  display: inline-flex;
-  justify-content: flex-end; }
-
-.navbar {
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
-.row {
-  margin-right: 0%;
-  margin-left: 0%; }
-
 .container-fluid {
   padding-right: 0%;
   padding-left: 0%;
   margin-right: 0%;
   margin-left: 0%; }
+
+.row {
+  margin-right: 1px;
+  margin-left: 0%; }
+  .row .col-lg-12 {
+    padding-right: 0px;
+    padding-left: 0px; }
+    .row .col-lg-12 .navbar {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      .row .col-lg-12 .navbar .navbar-nav {
+        display: inline-flex;
+        justify-content: flex-end; }
 
 .img-fluid {
   height: 954px; }
@@ -28,50 +25,25 @@
   margin-bottom: 10%;
   text-align: center; }
 
+.contacto {
+  padding: 180px; }
+
 .row-margin {
-  margin-left: 5%;
+  margin-left: 0px;
   margin-bottom: 100px; }
-
-.card-title {
-  margin-left: 35%; }
-
-.btn {
-  display: block; }
+  .row-margin .col-lg-4 {
+    padding-left: 5.6%; }
+    .row-margin .col-lg-4 .card-title {
+      margin-left: 0px; }
+      .row-margin .col-lg-4 .card-title .btn {
+        display: block; }
 
 .top {
   margin-top: 60px; }
 
-.row {
-  margin-right: 0%;
-  margin-left: 0%; }
-
-.color {
-  font-size: 100px;
-  border: 3px solid blue; }
-
-.save, .save--aceptar, .save--cancelar {
-  color: blue;
-  background-color: blueviolet;
-  border: 1px solid salmon; }
-
-.save--aceptar {
-  border: 3px solid red;
-  color: #00c3ff; }
-
-.save--cancelar {
-  border: 5px solid goldenrod;
-  color: gray; }
-
-.altura {
-  width: 150 px;
-  height: 150px; }
-
 .footer-margin {
   margin-top: 100px;
-  margin-left: 35%; }
-
-a {
-  color: black; }
+  margin-left: 38.9%; }
 
 @media only screen and (max-width: 480px) {
   .row-margin {

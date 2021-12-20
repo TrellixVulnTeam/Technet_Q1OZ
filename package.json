@@ -1,7 +1,7 @@
 {
   "name": "technet---lowcewicz",
   "version": "1.0.0",
-  "description": "",
+  "description": "sitio web sobre noticias del mundo de la tecnologia",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
