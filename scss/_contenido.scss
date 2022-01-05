@@ -1,78 +1,94 @@
-.img-fluid {
-    height: 954px;
-}
-
 .titulo-medio {
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: center;
-}
 
-.contacto{
-    padding: 180px;
+    .contactus {
 
-}
+        margin-top: 102px;
+        margin-bottom: 161px;
+        display: flex;
+        justify-content: center;
 
-.row-margin {
-    margin-left: 0px;
-    margin-bottom: 100px;
-
-    .col-lg-4 {
-        padding-left: 5.6%;
+    }
 
 
-        .card-title {
-            margin-left: 0px;
+    .row-margin {
+        margin-left: 0px;
+        margin-bottom: 100px;
 
-            .btn {
-                display: block;
+        .col-lg-4 {
+            padding-left: 5.6%;
+
+
+            .card-title {
+                margin-left: 0px;
+
+                .btn {
+                    display: block;
+                }
             }
         }
     }
+
+
+    .top {
+        margin-top: 60px;
+    }
+
+
+
+
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+
+    .grid-contenedor-padre {
+        display: grid;
+        grid-template-areas:
+            "name lastname"
+            "country city"
+            "phone phone"
+            "submit submit";
+        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-columns: 340px 345px;
+    }
+
+
 }
 
 
-.top {
-    margin-top: 60px;
+.name {
+    grid-area: name;
+}
+
+.lastname {
+    grid-area: lastname;
+}
+
+.country {
+    grid-area: country;
+}
+
+.city {
+    grid-area: city;
+}
+
+.phone {
+    grid-area: phone;
+    margin-left: 0px;
+}
+
+.submit {
+    grid-area: submit;
 }
 
 
-// CAMBIOS SASS 2
 
-// $estilos: (
-//     fontsize: 100px,
-//     borde: 3px solid blue,
-// );
-
-
-// .color {
-//     font-size: map-get($estilos, fontsize );
-//     border: map-get($estilos, borde );
-// }
-
-// .save {
-//     color: blue;
-//     background-color: blueviolet;
-//     border: 1px solid salmon;
-// }
-
-// .save--aceptar{
-//     @extend .save;
-//     border: 3px solid red;
-//     color: rgb(0, 195, 255);
-// }
-
-// .save--cancelar{
-//     @extend .save;
-//     border: 5px solid goldenrod;
-//     color: gray;
-// } 
-
-// @mixin sizes($widht, $height) {
-//     width: $widht;
-//     height: $height;
-// }
-
-// .altura{
-//     @include sizes(150 px, 150px )
-// }
+.row-margin .col-lg-4 {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+}

@@ -6,7 +6,10 @@
 
 .row {
   margin-right: 1px;
-  margin-left: 0%; }
+  margin-left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
   .row .col-lg-12 {
     padding-right: 0px;
     padding-left: 0px; }
@@ -17,39 +20,85 @@
         display: inline-flex;
         justify-content: flex-end; }
 
-.img-fluid {
-  height: 954px; }
-
 .titulo-medio {
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: center; }
+  .titulo-medio .contactus {
+    margin-top: 102px;
+    margin-bottom: 161px;
+    display: flex;
+    justify-content: center; }
+  .titulo-medio .row-margin {
+    margin-left: 0px;
+    margin-bottom: 100px; }
+    .titulo-medio .row-margin .col-lg-4 {
+      padding-left: 5.6%; }
+      .titulo-medio .row-margin .col-lg-4 .card-title {
+        margin-left: 0px; }
+        .titulo-medio .row-margin .col-lg-4 .card-title .btn {
+          display: block; }
+  .titulo-medio .top {
+    margin-top: 60px; }
 
-.contacto {
-  padding: 180px; }
+.formulario {
+  display: flex;
+  justify-content: center; }
+  .formulario .grid-contenedor-padre {
+    display: grid;
+    grid-template-areas: "name lastname" "country city" "phone phone" "submit submit";
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-columns: 340px 345px; }
 
-.row-margin {
-  margin-left: 0px;
-  margin-bottom: 100px; }
-  .row-margin .col-lg-4 {
-    padding-left: 5.6%; }
-    .row-margin .col-lg-4 .card-title {
-      margin-left: 0px; }
-      .row-margin .col-lg-4 .card-title .btn {
-        display: block; }
+.name {
+  grid-area: name; }
 
-.top {
-  margin-top: 60px; }
+.lastname {
+  grid-area: lastname; }
+
+.country {
+  grid-area: country; }
+
+.city {
+  grid-area: city; }
+
+.phone {
+  grid-area: phone;
+  margin-left: 0px; }
+
+.submit {
+  grid-area: submit; }
+
+.row-margin .col-lg-4 {
+  padding-left: 0%;
+  display: flex;
+  justify-content: center; }
 
 .footer-margin {
   margin-top: 100px;
-  margin-left: 38.9%; }
+  margin-left: 0%;
+  width: 100%; }
+  .footer-margin .nav {
+    justify-content: center; }
 
 @media only screen and (max-width: 480px) {
+  .formulario {
+    display: flex;
+    justify-content: center;
+    padding-left: 496px; }
+    .formulario .grid-contenedor-padre {
+      display: grid;
+      grid-template-areas: "name" "lastname" "city" "country" "phone" "submit";
+      grid-template-rows: 150px 150px 150px 150px 150px 150px;
+      grid-template-columns: 340px 345px; }
+  .row {
+    width: 100%; }
+  *,
+  ::after,
+  ::before {
+    box-sizing: content-box; }
   .row-margin {
     margin-left: 30px; }
-  .img-fluid {
-    height: 388px; }
   .footer-margin {
     margin-left: 20px; }
   .top {
@@ -57,4 +106,4 @@
 
 @media only screen and (min-width: 979px) {
   .row-margin {
-    margin-left: 5%; } }
+    margin-left: 0%; } }

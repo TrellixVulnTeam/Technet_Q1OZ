@@ -1,29 +1,64 @@
 @media only screen and (max-width: 480px) {
 
-.row-margin{
-    margin-left: 30px;
-}
+    .formulario {
+        display: flex;
+        justify-content: center;
+        padding-left: 496px;
 
-.img-fluid {
-    height: 388px;
-}
+        .grid-contenedor-padre {
+            display: grid;
+            grid-template-areas:
+                "name"
+                "lastname"
+                "city"
+                "country"
+                "phone"
+                "submit";
+            grid-template-rows: 150px 150px 150px 150px 150px 150px;
+            grid-template-columns: 340px 345px;
+        }
 
-.footer-margin {
-    margin-left: 20px;
-}
+    }
 
-.top {
-    margin-top: 16px;
-}
 
-}
- 
+    
 
-@media only screen and  (min-width: 979px) {
+
+    .row {
+        width: 100%;
+    }
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: content-box;
+    }
+
+
 
     .row-margin {
-    margin-left: 5%;
+        margin-left: 30px;
     }
-    
+
+
+    .footer-margin {
+        margin-left: 20px;
+    }
+
+    .top {
+        margin-top: 16px;
+    }
+
+
+
+
 }
 
+
+@media only screen and (min-width: 979px) {
+
+    .row-margin {
+        margin-left: 0%;
+    }
+
+}
